@@ -50,7 +50,7 @@ const Signup = () => {
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label>First Name *</label>
-                        <input type="textt" name="firstName" placeholder="Enter your first name" value={formData.firstName} onChange={handleChange} />
+                        <input type="text" name="firstName" placeholder="Enter your first name" value={formData.firstName} onChange={handleChange} />
                         {errors.firstName && <p className="error">{errors.firstName}</p>}
                     </div>
 

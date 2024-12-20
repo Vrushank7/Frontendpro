@@ -26,147 +26,147 @@
     position: relative;
 }
 
-.menuItems { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 5px; 
+.menuItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.menuItems > li { 
-    padding: 10px 15px; 
-    font-weight: 600; 
-    font-size: 17px; 
+.menuItems>li {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
-.menuItems > li > a { 
-    color: black; 
-    position: relative; 
+.menuItems>li>a {
+    color: black;
+    position: relative;
 }
 
-.megaMenu { 
-    width: 100%; 
-    min-height: 400px; 
-    box-shadow: 0px 0px 5px #ccc; 
-    position: absolute; 
-    top: 100%; 
-    left: 0; 
-    flex-wrap: wrap; 
-    display: flex; 
-    padding: 10px; 
-    transform: scaleY(0); 
-    transition: 0.3s ease-out; 
-    transform-origin: top; 
+.megaMenu {
+    width: 100%;
+    min-height: 400px;
+    box-shadow: 0px 0px 5px #ccc;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    transform: scaleY(0);
+    transition: 0.3s ease-out;
+    transform-origin: top;
     background: rgba(255, 255, 255, 0.8);
 }
 
-.megaMenuItems { 
-    width: 30%; 
-    margin: 1.5%; 
+.megaMenuItems {
+    width: 30%;
+    margin: 1.5%;
 }
 
-.megaMenuItems > li > a { 
-    color: rgb(143, 142, 142); 
-    font-weight: 400; 
-    font-size: 15px; 
+.megaMenuItems>li>a {
+    color: rgb(143, 142, 142);
+    font-weight: 400;
+    font-size: 15px;
 }
 
-h4 { 
-    color: #F330B2; 
-    margin: 10px 0px; 
+h4 {
+    color: #F330B2;
+    margin: 10px 0px;
 }
 
-.megaMenuItems > li > a:hover { 
-    color: black; 
+.megaMenuItems>li>a:hover {
+    color: black;
 }
 
-.menuItems > li > a:hover { 
-    color: black !important; 
+.menuItems>li>a:hover {
+    color: black !important;
 }
 
-.megaMenuLi:hover + .megaMenu, 
-.menuItems > li:hover .megaMenu { 
-    transform: scaleY(1); 
-    transition: 0.5s ease-out; 
+.megaMenuLi:hover+.megaMenu,
+.menuItems>li:hover .megaMenu {
+    transform: scaleY(1);
+    transition: 0.5s ease-out;
 }
 
-.menuItems > li > a::after { 
-    content: ""; 
-    position: absolute; 
-    bottom: -30px; 
-    left: 0; 
-    width: 0%; 
-    height: 2px; 
-    background-color: #F330B2; 
-    transition: width 0.1s ease-out; 
+.menuItems>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #F330B2;
+    transition: width 0.1s ease-out;
 }
 
 .active-women .megaMenuLi::after,
-.active-women:hover .megaMenuLi::after { 
-    width: 100%; 
-    background-color: #F330B2; 
+.active-women:hover .megaMenuLi::after {
+    width: 100%;
+    background-color: #F330B2;
 }
 
 .active-men .megaMenuLi::after,
-.active-men:hover .megaMenuLi::after { 
-    width: 100%; 
-    background-color: red; 
+.active-men:hover .megaMenuLi::after {
+    width: 100%;
+    background-color: red;
 }
 
 .active-kids .megaMenuLi::after,
-.active-kids:hover .megaMenuLi::after { 
-    width: 100%; 
-    background-color: brown; 
+.active-kids:hover .megaMenuLi::after {
+    width: 100%;
+    background-color: brown;
 }
 
 .active-beauty .megaMenuLi::after,
-.active-beauty:hover .megaMenuLi::after { 
-    width: 100%; 
-    background-color: darkblue; 
+.active-beauty:hover .megaMenuLi::after {
+    width: 100%;
+    background-color: darkblue;
 }
 
-.menMenuLi:hover::after { 
-    background-color: red; 
+.menMenuLi:hover::after {
+    background-color: red;
 }
 
-.kidsMenuLi:hover::after { 
-    background-color: brown; 
+.kidsMenuLi:hover::after {
+    background-color: brown;
 }
 
-.beautyMenuLi:hover::after { 
-    background-color: darkblue; 
+.beautyMenuLi:hover::after {
+    background-color: darkblue;
 }
 
-.menHeading { 
-    color: red; 
-    margin: 10px 0; 
+.menHeading {
+    color: red;
+    margin: 10px 0;
 }
 
-.kidsHeading { 
-    color: brown; 
-    margin: 10px 0; 
+.kidsHeading {
+    color: brown;
+    margin: 10px 0;
 }
 
-.beautyHeading { 
-    color: darkblue; 
-    margin: 10px 0; 
+.beautyHeading {
+    color: darkblue;
+    margin: 10px 0;
 }
 
-.menMenuLi:hover { 
-    color: red !important; 
+.menMenuLi:hover {
+    color: red !important;
 }
 
-.kidsMenuLi:hover { 
-    color: brown !important; 
+.kidsMenuLi:hover {
+    color: brown !important;
 }
 
-.beautyMenuLi:hover { 
-    color: darkblue !important; 
+.beautyMenuLi:hover {
+    color: darkblue !important;
 }
 
 
-.menMegaMenuItems > li > a:hover { 
-    color: black; 
+.menMegaMenuItems>li>a:hover {
+    color: black;
 }
 
 .mobile-menu-toggle {
@@ -179,7 +179,189 @@ h4 {
     display: none;
 }
 
-  
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fdeff4, #fef6e4);
+    color: #333;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.login-box {
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.country-code {
+    padding: 10px;
+    background: #f0f0f0;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-field {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f7336c;
+    font-weight: bold;
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #f7336c;
+    font-weight: bold;
+}
+
+.continue-button {
+    background-color: #f7336c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.continue-button:hover {
+    background-color: #e62a5f;
+}
+
+.help-text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.help-text .link {
+    text-decoration: none;
+    color: #f7336c;
+    font-weight: bold;
+}
+
+
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffe6e6, #ffeaea);
+    font-family: Arial, sans-serif;
+}
+
+.signup-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+}
+
+.signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.signup-form form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+    color: #555;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.signup-form form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-form form button:hover {
+    background: #e02b5b;
+}
+
+.signup-links p {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.signup-links a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+.signup-links a:hover {
+    text-decoration: none;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    margin: -10px 0 10px;
+    text-align: left;
+}
+
+
 @media screen and (max-width: 1024px) {
     .innerHeader {
         width: 95%;
@@ -268,6 +450,79 @@ h4 {
     .logo {
         width: 70px;
     }
+
+    .signup-container {
+        padding: 10px;
+    }
+
+    .signup-form {
+        padding: 20px;
+    }
+
+    .signup-form h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .signup-links p {
+        font-size: 12px;
+    }
+
+
+    .login-box {
+        width: 90%;
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .banner {
+        max-width: 80px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .input-container {
+        margin: 12px 0;
+    }
+
+    .country-code {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .input-field {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .terms {
+        font-size: 11px;
+        margin-bottom: 15px;
+        padding: 0 5px;
+    }
+
+    .continue-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .help-text {
+        font-size: 11px;
+        margin-top: 12px;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -279,4 +534,21 @@ h4 {
     .logo {
         width: 60px;
     }
+
+    .signup-form {
+        padding: 15px;
+    }
+
+    .signup-form h2 {
+        font-size: 18px;
+    }
+
+    .login-box {
+        width: 70%;
+    }
+
+    .banner {
+        max-width: 90px;
+    }
+
 }

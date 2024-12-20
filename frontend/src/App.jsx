@@ -3,19 +3,22 @@ import { BrowserRouter as Router, Route, Routes, useLocation  } from "react-rout
 import Home from "./components/Home.jsx";
 import Navbar from './components/Navbar.jsx';
 import Login from "./components/Login.jsx";
+import Signup from './components/Signup.jsx';
 
 
 
 function App() {
   const location = useLocation();
   const showNavbar = location.pathname !== '/login';
+  const thatnavbar = location.pathname !== '/sign';
  
   return (
     <div>
-      {showNavbar && <Navbar />}
+      {showNavbar && thatnavbar  && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/sign" element={<Signup />} />
       </Routes>
     </div>
   );
